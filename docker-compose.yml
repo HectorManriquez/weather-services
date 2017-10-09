@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: weather-services
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+    restart: always
